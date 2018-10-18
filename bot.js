@@ -526,6 +526,8 @@ table = require('table');
 client.on('message' , async (message) => {
 
     if(message.content.startsWith(prefix + "topinvite")) {
+	   
+	if (command === "-topinvites") {    
 
   let invites = await message.guild.fetchInvites();
 
